@@ -293,4 +293,30 @@ loes_color.add('yellow')
     loes_color = set (['blue', 'red', 'green'])
     ilkays_color = set(['blue', 'yellow'])
     both = ilkays_color.intersection(loes_color) # set1 & set2
-    both -> {'blue'}
+    both -> {'blue'}  
+  ```
+# Numpy
+* Muti-dimensional Arrays
+* Built-in array operations
+* Simplified, powerful array interactions -> broadcasting
+* Integration of other languages
+
+* Reference or Copy
+```python
+an_array = np.array([[11,12,13,14],
+                    [21,22,23,24],
+                    [31,32,33,34]])
+a_slice = an_array[:2 , 1:3]
+#create a copy of the portion of np.array
+a_slice = np.array(an_array[:2, 1:3])
+```
+* using the SINGLE INDEX is a SPECIAL CASE
+```pythonan_array = np.array([[11,12,13,14],[21,22,23,24],[31,32,33,34]])
+row_rank1 = an_array[1, :]
+#only a single []
+print (row_rank1, row_rank1.shape)
+'''(array([21, 22, 23, 24]), (4,))'''
+row_rank2 = an_array[1:2, :]
+print (row_rank2, row_rank2.shape)
+'''(array([[21, 22, 23, 24]]), (1, 4))'''
+```
