@@ -95,3 +95,5 @@ plt.title('Histogram of CO2 Emissions Per Capita')
 #plt.axis([10, 22, 0, 14])
 plt.grid(True)
 plt.show()
+
+#Geographic overlays use additional visualization libs
