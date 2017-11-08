@@ -295,7 +295,7 @@ loes_color.add('yellow')
     both = ilkays_color.intersection(loes_color) # set1 & set2
     both -> {'blue'}  
   ```
-# Numpy
+# Numpy: speed and Functionality
 * Muti-dimensional Arrays
 * Built-in array operations
 * Simplified, powerful array interactions -> broadcasting
@@ -311,7 +311,8 @@ a_slice = an_array[:2 , 1:3]
 a_slice = np.array(an_array[:2, 1:3])
 ```
 * using the SINGLE INDEX is a SPECIAL CASE
-```pythonan_array = np.array([[11,12,13,14],[21,22,23,24],[31,32,33,34]])
+```python
+an_array = np.array([[11,12,13,14],[21,22,23,24],[31,32,33,34]])
 row_rank1 = an_array[1, :]
 #only a single []
 print (row_rank1, row_rank1.shape)
@@ -320,3 +321,122 @@ row_rank2 = an_array[1:2, :]
 print (row_rank2, row_rank2.shape)
 '''(array([[21, 22, 23, 24]]), (1, 4))'''
 ```
+* filter
+```python
+an_array = np.array([[11,12],[21,22],[31,32]])
+#create a filter which will be boolean values
+filter = (an_array > 15)
+print(filter)
+#select elements which meet the criteria
+print(an_array[filter])
+#for short,
+an_array[(an_array > 20) & (an_array < 30)]
+#change the element based on condition
+an_array[an_array % 2 == 0] += 100
+```
+* Datatyeps and Operator 
+```python
+ex1 = np.array([11,12])
+print(ex1.dtype) --> int64
+print(type(ex1)) --> <class 'numpy.ndarray'>
+```
+* Arithmetic Operations:
+```python
+x = np.array([[111,112],[121,122]], dtype=np.int64)
+y = np.array([[211.1,212.2],[221.1,222.1]], dtype=np.float64)
+print(x)
+print(y)
+print(x + y)
+#same as the numpy function "add"
+print(np.add(x, y))
+print(x - y)
+print(np.subtract(x,y))
+```
+* Statistical, Sorting, Set operations
+```python
+# random 2 * 4 matrix
+arr = 10 * np.random.randn(2,5)
+print(arr)
+# mean for all elements
+print(arr.mean())
+# mean by row
+print(arr.mean(axis=1))
+# mean by column
+print(arr.mean(axis=0))
+# sum
+print(arr.sum())
+#compute the medians
+print(np.median(arr, axis=1))
+```
+* Sorting
+    * Copy and Sort  
+    ```python
+    unsorted = np.random.randn(5)
+    print(unsorted)
+    # create copy and sort
+    sorted = np.array(unsorted)
+    sorted.sort()
+    print(sorted)
+    print(unsorted)
+    ```
+    * Inplace sorting  
+    ```python
+    #inplace sorting
+    unsorted.sort()
+    print(unsorted)
+    ```
+* Finding Unique elements:
+```python
+array  = np.array([1,2,3,4,1,2,4,2])
+print(np.unique(array))
+```
+* Set Operations with np.array data type
+```python
+s1 = np.array(['desk','chair','bulb'])
+s2 = np.array(['lamp', 'bulb','chair'])
+print(s1, s2)
+print(np.intersect1d(s1,s2))
+print(np.union1d(s1,s2))
+# element in s1 are not in s2
+print(np.setdiff1d(s1,s2))
+print(np.setdiff1d(s2,s1))
+
+#whether each element in the array or not
+#boolean
+print(np.in1d(s1, s2))
+```
+* Broadcasting
+```python
+start = np.zeros((4,3))
+print(start)
+#create a rank 1 ndarry with 3 value
+add_rows = np.array([1,0,2])
+print(add_rows)
+# add to each row of 'start' using broadcasting
+y = start + add_rows
+print(y)
+
+#create an ndarray 4 * 1 to broadcast across colums
+add_cols = np.array([[0,1,2,3]])
+add_cols = add_cols.T #transpose on it, denoted by T
+print(add_cols)
+# add to each column of 'start'
+y = start + add_cols
+print(y)
+```
+```python
+#broadcast in both dimensions
+add_scalar = np.array([1])
+print(start + add_scalar)
+```
+```python
+# b1 b2
+a = np.array([[0,0],[0,0]])
+b1 = np.array([1,1])
+b2 = 1
+print(a + b1 == a + b2)
+print(a + b2)
+```
+
+
+
