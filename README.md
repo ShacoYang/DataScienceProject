@@ -437,6 +437,56 @@ b2 = 1
 print(a + b1 == a + b2)
 print(a + b2)
 ```
+#Satellite Image Analysis using numpy
+###Data source: Satellite Image from WIFIRE Project
+* Loading libs: numpy, scipy, matplotlib  
+```python
+%matplotlib inline
+import numpy as np
+from scipy import misc
+import matplotlib.pyplot as plt
+```
+* Creating a numpy array from an image file
+```python
+#choose a image file as an ndarray and display type
+from skimage import data
+photo_data = misc.imread('./wifire/sd-3layers.jpg')
+type(photo_data)
+```
+```python
+plt.figure(figsize=(10,10))
+plt.imshow(photo_data)
+```
+```python
+photo_data.shape ->(3725, 4797, 3)
+#it is a three layered matrix
+#length width, the third number 3 is for three layers
+#Red: Altitude
+#Green: Aspect
+#Blue: Slope
+print(photo_data) 
+```
+* Pixel on the xth Row and xth Column
+```python
+photo_data[150,250] #RGB color for this pixel
+photo_data[150,250,1] # Green
+```
+* Set a Pixel to ALL Zeros
+```python
+photo_data[150,250] = 0
+plt.figure(figsize=(10,10))
+plt.imshow(photo_data)
+```
+* Changing colors in a Range
+```python
+photo_data = misc.imread('./wifire/sd-3layers.jpg')
+#set GREEN LAYER for rows 200 to 800 to full intensity
+photo_data[200:800, : ,1] = 255
+#set 200-800 ALL LAYERS to white
+#photo_data[200:800, :] = 255
+plt.figure(figsize=(10,10))
+plt.imshow(photo_data)
+```
 
 
 
