@@ -39,3 +39,5 @@ three = df.pop("three")
 print(df)
 del df['two']
 df.insert(2, 'copy_of_one', df['one'])
+
+

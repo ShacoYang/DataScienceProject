@@ -592,3 +592,49 @@ df.insert(2, 'copy_of_one', df['one'])
 #assign it to 'one_upper_half' col
 df['one_upper_half'] = df['one'][:2]
 ```
+#### Data Ingestion:  
+* CSV: input-> Pandas DataFrame obj containing contents of the file
+* JSON: -> DataFrame or a Series containing the contents
+* HTML: -> a list of Pandas DataFrames
+* SQL: SQL Query, DB connection, DataFrame obj containing contents of the file  
+
+#### Data Structures : [Series](https://github.com/ShacoYang/DataScienceProject/blob/master/Week4Pandas/Movies.py)
+```python
+#extract 0th row: notice that it's affect a series
+row_0 = tags.iloc[0]
+print(type(row_0))
+print(row_0)
+
+print(row_0.index)
+print(row_0['userId'])
+print('rating' in row_0)
+print(row_0.name)
+row_0 = row_0.rename('first_row')
+print(row_0.name)
+
+# Extract row 0, 11, 2000 from DataFrame
+tags.iloc[ [0,11,2000] ]
+```
+* describe()
+    * data_frame.describe()
+    * shows summary statistics of the dataframe
+* corr()
+    * data_frame.corr()
+    * computes pairwise Pearson coefficient(p) of columns
+    * other coefficients vailable: Kendall, Spearman
+* func = min(), max(), mode(), median()
+    * data_frame.func()
+    * Frequently used optional parameter:
+        * axis = 0(rows) or 1(columns)
+* mean()
+    * data_frame.mean(axis={0 or 1})
+        * Axis = 0: index
+        * Axis = 1: columns
+    * Output Series or DataFrame with the mean values
+* std()
+    * data_frame.std(axis={0 or 1})
+      * Axis = 0: index
+      * Axis = 1: columns
+    * Series or DataFrame with the Standard Deviation value
+* any() all()
+    * Returns whether ANY element or ALL elements are True
