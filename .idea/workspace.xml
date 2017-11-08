@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a63ed05-10da-45e1-b299-5dc83f019a44" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week5Matplotlib/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week4Pandas/Movies.py" afterPath="$PROJECT_DIR$/Week4Pandas/Movies.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Week4Pandas/Pandas.py" afterPath="$PROJECT_DIR$/Week4Pandas/Pandas.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,22 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pandas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week4Pandas/Pandas.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="547">
-                <caret line="639" column="58" lean-forward="false" selection-start-line="639" selection-start-column="58" selection-end-line="639" selection-end-column="58" />
+              <first_editor relative-caret-position="382">
+                <caret line="909" column="7" lean-forward="true" selection-start-line="909" selection-start-column="7" selection-end-line="909" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -41,12 +34,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movies.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week4Pandas/Movies.py">
+      <file leaf-file-name="Matplotlib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="143">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="96" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +56,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mode</find>
+      <find>\</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>\\</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -73,15 +77,16 @@
         <option value="$PROJECT_DIR$/Week3Numpy/SliceIndex.py" />
         <option value="$PROJECT_DIR$/Week4Pandas/Pandas.py" />
         <option value="$PROJECT_DIR$/Week4Pandas/Movies.py" />
+        <option value="$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1477" />
-    <option name="y" value="93" />
-    <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="x" value="293" />
+    <option name="y" value="74" />
+    <option name="width" value="1165" />
+    <option name="height" value="938" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,6 +121,11 @@
               <item name="DataScienceProject" type="462c0819:PsiDirectoryNode" />
               <item name="Week4Pandas" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DataScienceProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Week5Matplotlib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -149,7 +159,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Movies">
+  <component name="RunManager" selected="Python.Matplotlib">
+    <configuration name="Matplotlib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week5Matplotlib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataScienceProject" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="Movies" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,37 +245,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week1Soccer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DataScienceProject" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week1Soccer/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Numpy" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SliceIndex" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Pandas" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Movies" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Numpy" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SliceIndex" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Pandas" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Movies" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Matplotlib" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Movies" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Pandas" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SliceIndex" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Numpy" />
-        <item index="4" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Matplotlib" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Movies" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Pandas" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SliceIndex" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Numpy" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +279,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1608" y="-444" width="1616" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -277,11 +287,11 @@
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31613508" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4052533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.169375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -440,27 +450,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week4Pandas/Movies.py">
+    <entry file="file://$PROJECT_DIR$/Week4Pandas/Pandas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="519">
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week4Pandas/Pandas.py">
+    <entry file="file://$PROJECT_DIR$/Week4Pandas/Movies.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="11" column="128" lean-forward="false" selection-start-line="11" selection-start-column="119" selection-end-line="11" selection-end-column="128" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="96" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="547">
-            <caret line="639" column="58" lean-forward="false" selection-start-line="639" selection-start-column="58" selection-end-line="639" selection-end-column="58" />
+          <first_editor relative-caret-position="382">
+            <caret line="909" column="7" lean-forward="true" selection-start-line="909" selection-start-column="7" selection-end-line="909" selection-end-column="7" />
             <folding />
           </first_editor>
           <second_editor />

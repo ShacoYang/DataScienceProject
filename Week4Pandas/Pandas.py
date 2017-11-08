@@ -41,3 +41,14 @@ del df['two']
 df.insert(2, 'copy_of_one', df['one'])
 
 
+#Data Cleaning
+#globally change values in a DataFrame
+df.replace()
+df.replace(9999.0,0) #replace all 9999 to 0
+#forward backword fill gaps
+df.fillna(method = 'ffill') # going down
+df.fillna(method = 'backfill') # up
+df.dropna(axis=0)
+df.dropna(axis=1)
+#interpolation
+df.interpolate()

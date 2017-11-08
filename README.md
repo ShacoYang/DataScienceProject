@@ -638,3 +638,273 @@ tags.iloc[ [0,11,2000] ]
     * Series or DataFrame with the Standard Deviation value
 * any() all()
     * Returns whether ANY element or ALL elements are True
+```python
+print(ratings['rating'].describe())
+print(ratings.describe())
+print(ratings['rating'].mean())
+print(ratings.mean())
+print(ratings['rating'].mode()) # find most frequent one
+
+filter_1 = ratings['rating'] > 4
+print(filter_1)
+filter_1.any()
+
+filter_2 = ratings['rating'] > 0
+filter_2.all()
+```
+
+####Data Cleaning
+######Why cleaning making data ready for analysis  
+   * Missing Values  
+   * Outliers in the data  
+   * Invalid data(<0 for age)  
+   * NaN (np.nan)  
+   * None value     
+######Handle Data Quality Issues  
+   * Replace the value
+   * Fill gaps forward / backward
+   * Drop fields
+   * Interpolation
+```python
+#globally change values in a DataFrame
+df.replace(9999.0,0) #replace all 9999 to 0
+#forward backword fill gaps
+df.fillna(method = 'ffill') # going down
+df.fillna(method = 'backfill') # up
+#interpolation
+df.interpolate()
+```
+####Data Visualization  
+* df.plot.bar()
+    * Each col is represented by a diff col and turned into a bar  
+* df.plot.box()
+    * showing data distribution, each box has min and max and medium for colms
+* df.plot.hist()
+    * distribution of data and it can show skewness on unusual dispersion
+* df.plot()
+    * create quick line graphs of data sets
+##### Frequent Data Operations  
+* Slice out cols
+    * df['col_name']
+* Filter out rows
+    * df[df['col_name']>0] --> select row where col_name is positive
+* Insert New Column
+    * df['col_name4'] = df['col_name3'] ** 2
+* Add a new Row
+    * df.loc[10] = [11,12]
+* Delete a Row
+    * df.drop(df.index[[5]])
+* Delete a Col
+    * del df['col_name']
+* Group by and Aggregate: combine statistics about the DataFrame
+    * df.groupby('student_id').mean() group by using studentID and extract mean scores for each subject
+####Transformation
+```python
+print(tags['tag'].head())
+print(movies[['title','genres']].head())
+ratings[1000:1010]
+print(ratings[-10:]) #10 from the end
+#value_counts let you find out the count of each unique value occurring in the input
+tag_counts = tags['tag'].value_counts()
+print(tag_counts)
+
+#Filters for selection rows
+is_highly_rated = ratings['rating'] >= 4.0
+print(is_highly_rated[-5:])
+#str.contains()
+is_animation = movies['genres'].str.contains('Animation')
+movies[is_animation][5:15]
+
+#Aggregation across rows gives us big pics about the whole data set
+ratings_count = ratings[['movieId','rating']].groupby('rating').count()
+print(ratings_count)
+
+average_rating = ratings[['movieId','rating']].groupby('movieId').mean()
+average_rating.head()
+#how many rating per movie
+movie_count = ratings[['movieId','rating']].groupby('movieId').count()
+movie_count.head()
+
+movie_count = ratings[['movieId','rating']].groupby('movieId').count()
+movie_count.tail()
+```
+
+#####[Merging DataFrames](http://pandas.pydata.org/pandas-docs/stable/merging.html)   
+* pd.concat([left, left])
+    * Stack Dataframes (Vertically)
+    * pd.concat([left,right]) if some cells for cols didn't exist NaN or Missing values
+* Inner Join using pandas.concat() (Horizontally)
+    * pd.concat([left,right], axis = 1, join = 'inner')
+* Stack Dataframes using append()  vertically
+    * left.append(right)
+* Inner join using merge() it can remove the duplicates
+    * pd.merge(left, right, how = 'inner')
+    
+####Combine aggreagation, merging, and filters to get useful analytics
+```python
+#as_index = False generate new index
+avg_ratings = ratings.groupby('movieId', as_index=False).mean()
+del avg_ratings['userId']
+print(avg_ratings.head())
+#both filters  comedy movie and high rated
+box_office[is_comedy & is_highly_rated][-5:]
+```
+
+#####Frequent String Operations
+* str.split()
+* str.contains() dtype: bool
+* str.replace()
+* str.extract() return **first** match found
+```python
+#split
+#expend make sure it's an actual dataframe not just a series of lists
+movie_genres = movies['genres'].str.split('|', expand=True)
+movie_genres[:10]
+```
+
+###Summary 
+* Data ingestion: how to ingest data in muti-formats, basic read opertions
+* Series and DataFrame
+* Func perform basic statistical operations on Series and DataFrame
+    * describe()
+    * min(), max()
+    * std()
+    * mode()
+    * corr()
+    * any(), all()
+* Data Preparation
+    * Detection
+        * isnull()
+        * any()
+    * Cleaning
+        * dropna()
+* Data Visualization
+    * inline plotting
+    * Histograms
+    * Boxplots
+    * Changing limits on Y-axis
+* Data Transformation
+    * Slicing Colms
+    * Filtering Rows
+    * groupby()
+        * mean()
+        * count()
+* Merging DataFrames  
+    * merge()
+        * how = inner
+        * on = keys     
+* String Operations
+    * str.split()
+    * str.contains()
+    * str.extract()
+
+##Data Visualization
+#####Conceptual or data-driven
+#####Declarative or exploratory  
+* Good data visualization:
+    * Trustworthy
+        * Data presented is honestly portrayed
+    * Accessible
+    * Elegant
+        * focus on relevant
+####Matplotlib
+* plotting Lib for Python
+* Other libs:
+    * Seaborn
+    * ggplot
+    * Altair
+    * Bokeh
+    * Plotly
+    * Folium
+```python
+#how many unique countries
+countries = data['CountryName'].unique().tolist()
+print(len(countries))
+
+#are there same number of country codes
+# How many unique country codes are there ? (should be the same #)
+countryCodes = data['CountryCode'].unique().tolist()
+print(len(countryCodes))
+# How many unique indicators are there ? (should be the same #)
+indicators = data['IndicatorName'].unique().tolist()
+len(indicators)
+# How many years of data do we have ?
+years = data['Year'].unique().tolist()
+len(years)
+#range of years
+print(min(years), "to", max(years))
+```
+#####Matplotlib: Basic Plotting
+* Chart Type
+* Axes data ranges
+* Axes labels
+* Figure labels
+* Legend
+* Aesthetics
+* Annotations
+```python
+##Plotting in matplotlib
+# pick USA and indicator CO2 emissions
+hist_indicator = 'CO2 emissions \(metric'
+hist_country = 'USA'
+mask1 = data['IndicatorName'].str.contains(hist_indicator)
+mask2 = data['CountryCode'].str.contains(hist_country)
+#stage is indicators matching the USA for country code and CO2 emissions
+stage = data[mask1 & mask2]
+print(stage.head())
+```
+* years and co2 emissions send to bar plot
+    ```python
+    years = stage['Year'],values
+    CO2 = stage['Value'].values
+    #create
+    plt.bar(years, CO2)
+    plt.show()
+    ```
+* Improve plot a bit
+    ```python
+    #Improve graph
+    #a line plot
+    plt.plot(stage['Year'].values, stage['Value'].values)
+    #Label the axes
+    plt.xlabel('Year')
+    plt.ylabel(stage['IndicatorName'].iloc[0])
+    #Label the figure
+    plt.title('CO2 Emissions in the USA')
+    plt.axis([1959,2011,0,25])
+    plt.show()
+    ```
+* Histograms to explore the distribution of values
+    ```python
+    ##Using Histograms to explore the distribution of values
+    hist_data = stage['Value'].values
+    print(len(hist_data))
+    #histogram of the data
+    plt.hist(hist_data, 10, normed=False, facecolor='green')
+    plt.xlabel(stage['IndicatorName'].iloc[0])
+    plt.ylabel('# of Years')
+    plt.title('Histogram Example')
+    plt.grid(True) # add grid
+    plt.show()
+    ```
+* USA relates to other contries
+    ```python
+    #plot a histogram of the emissions per capita
+    # subplots returns a touple with the figure, axis attributes.
+    fig, ax = plt.subplots()
+    ax.annotate("USA",
+                xy=(18, 5), xycoords='data',
+                xytext=(18, 30), textcoords='data',
+                arrowprops=dict(arrowstyle="->",
+                                connectionstyle="arc3"),
+                )
+    plt.hist(co2_2010['Value'], 10, normed=False, facecolor='green')
+    
+    plt.xlabel(stage['IndicatorName'].iloc[0])
+    plt.ylabel('# of Countries')
+    plt.title('Histogram of CO2 Emissions Per Capita')
+    
+    #plt.axis([10, 22, 0, 14])
+    plt.grid(True)
+    plt.show()
+    ```
