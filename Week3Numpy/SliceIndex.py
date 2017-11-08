@@ -58,3 +58,9 @@ print("Values in the array at those indices: ", an_array[row_indices, col_indice
 an_array[row_indices, col_indices] += 10000
 print ('\nChanged Array:')
 print (an_array)
+
+# create 3 * 2 array
+an_array = np.array([[11,12],[21,22],[31,32]])
+print(an_array)
+filter = (an_array > 15)
+print(filter)
