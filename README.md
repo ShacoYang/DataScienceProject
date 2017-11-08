@@ -488,5 +488,107 @@ plt.figure(figsize=(10,10))
 plt.imshow(photo_data)
 ```
 
+#Pandas
+[Panadas Documentation](http://pandas.pydata.org/pandas-docs/stable/)   
+panda builds up Numpy, it enables **ingestion and manipulation**,  
+it also enables **combining large data sets** using **merge** and **join**.  
+Efficient library for **breaking datasets**, **transforming**, **recombining**. 
+**Visualizations**  
+* Pandas Series
+    * 1d array-like object: many ways to index data  
+    * Acts like an ndarray
+* Pandas DataFrame
+    * 2d elastic data structure  
+    * Support heterogeneous data  
+##### Series
+```python
+#Format -> pd.Series(data= [], index = [])
+ser = pd.Series(data=[100,200,300], index=['tom','bob','nancy'])
+#Data can be HETEROGENEOUS
+ser = pd.Series([100, 'foo', 300, 'bar', 500], ['tom', 'bob', 'nancy', 'dan', 'eric'])
+print(ser)
+print(ser.index)
+#Value of the location index by ''
+print(ser.loc[['nancy','bob']])
+#also work for index
+print(ser[[2,3]])
+#if an index exists
+print('bob' in ser)
+# string also *2 duplicate
+print(ser * 2)
+```
+##### DataFrame
+* 2-d labeled data structure
+```python
+#create a dictionary
+d = {'one' : pd.Series([100., 200., 300.], index=['apple', 'ball', 'clock']),
+     'two' : pd.Series([111., 222., 333., 4444.], index=['apple', 'ball', 'cerill', 'dancy'])}
+df = pd.DataFrame(d)
+print(df)
+          one     two
+apple   100.0   111.0
+ball    200.0   222.0
+cerill    NaN   333.0
+clock   300.0     NaN
+dancy     NaN  4444.0
+```
+* index, column
+```python
+df.index
+#Index(['apple', 'ball', 'cerill', 'clock', 'dancy'], dtype='object')
+df.colunms
+#Index(['one', 'two'], dtype='object')
+#give dic as the input and pick indices '...' for col indexes from the series
+pd.DataFrame(d, index=['dancy', 'ball', 'apple'])
+         one     two
+dancy    NaN  4444.0
+ball   200.0   222.0
+apple  100.0   111.0
+#select cols not exists
+pd.DataFrame(d, index=['dancy', 'ball', 'apple'], columns=['two', 'five'])
+          two five
+dancy  4444.0  NaN
+ball    222.0  NaN
+apple   111.0  NaN
 
+# data array of 2d,
+# alex': 1, 'joe': 2 in 1
+#'ema': 5, 'dora': 10, 'alice': 20 in 2
+data = [{'alex': 1, 'joe': 2}, {'ema': 5, 'dora': 10, 'alice': 20}]
+data
+[{'alex': 1, 'joe': 2}, {'alice': 20, 'dora': 10, 'ema': 5}]
+pd.DataFrame(data)
+alex	alice	dora	ema	joe
+0	1.0	NaN	NaN	NaN	2.0
+1	NaN	20.0	10.0	5.0	NaN
+#set index name
+pd.DataFrame(data, index=['a','b'])
+#selecct some of the elements from the dic as cols
+pd.DataFrame(data, columns=['joe','dora'])
+#set index name and select some elements
+pd.DataFrame(pd.DataFrame(data,index=['a','b']), columns=['joe', 'dora','alice'])
+```
+* Basic DataFrame Operation
+```python
+df['three'] = df['one'] * df['two']
+         one     two    three
+apple   100.0   111.0  11100.0
+ball    200.0   222.0  44400.0
+cerill    NaN   333.0      NaN
+clock   300.0     NaN      NaN
+dancy     NaN  4444.0      NaN
 
+df['flag'] = df['one'] > 250
+          one     two    three   flag
+apple   100.0   111.0  11100.0  False
+ball    200.0   222.0  44400.0  False
+cerill    NaN   333.0      NaN  False
+clock   300.0     NaN      NaN   True
+dancy     NaN  4444.0      NaN  False
+three = df.pop("three") #remove col three
+del df['two']
+df.insert(2, 'copy_of_one', df['one'])
+#get the first two values-->[:2] in data frame column 'one'
+#assign it to 'one_upper_half' col
+df['one_upper_half'] = df['one'][:2]
+```
