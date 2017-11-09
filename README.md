@@ -968,4 +968,24 @@ allowing for data driven decisions to be made
     * All samples have same class label
     * Number of samples in node reaches min
     * Change in impurity measure is smaller than threshold 
-    * Max tree depth is reached   
+    * Max tree depth is reached
+#### Decision Trees demo
+* Data Cleaning
+    ```python
+    #if contains NaN values
+    print(data[data.isnull().any(axis = 1)])
+    #Data Cleaning
+    #del num cols
+    del data['number']
+    #drop null values
+    before_row = data.shape[0]
+    print(before_row) #how many of rows
+    data = data.dropna()
+    after_rows = data.shape[0]
+    print(after_rows) #after droped
+    print(before_row - after_rows)
+    ```  
+* Convert to a Classification Task 
+```python
+
+```
