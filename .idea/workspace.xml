@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a63ed05-10da-45e1-b299-5dc83f019a44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week7ML/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DataScienceProject.iml" afterPath="$PROJECT_DIR$/.idea/DataScienceProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week7ML/Scikit_learn.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -33,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Matplotlib.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py">
+      <file leaf-file-name="Scikit_learn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Week7ML/Scikit_learn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -45,14 +42,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Matplotlib2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week4Pandas/Matplotlib2.py">
+      <file leaf-file-name="daily_weather.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week7ML/daily_weather.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,11 +86,12 @@
         <option value="$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py" />
         <option value="$PROJECT_DIR$/Week4Pandas/Matplotlib2.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Week7ML/Scikit_learn.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
+    <option name="x" value="675" />
     <option name="y" value="23" />
     <option name="width" value="1165" />
     <option name="height" value="815" />
@@ -157,11 +153,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Week7ML" />
+      <recent name="C:\Users\yanlu\PycharmProjects\DataScienceProject\Week1Soccer" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yanlu\PycharmProjects\DataScienceProject\Week1Soccer\SoccerExample" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\yanlu\PycharmProjects\DataScienceProject\Week1Soccer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -176,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Matplotlib2">
+  <component name="RunManager" selected="Python.Scikit_learn">
     <configuration name="Matplotlib" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,37 +242,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="SliceIndex" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Scikit_learn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3Numpy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week7ML" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DataScienceProject" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3Numpy/SliceIndex.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week7ML/Scikit_learn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.SliceIndex" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Pandas" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Movies" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Matplotlib" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Matplotlib2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Pandas" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Movies" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Matplotlib" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Matplotlib2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Scikit_learn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Matplotlib2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Matplotlib" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Movies" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Pandas" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SliceIndex" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Scikit_learn" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Matplotlib2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Matplotlib" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Movies" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Pandas" />
       </list>
     </recent_temporary>
   </component>
@@ -296,13 +293,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="23" width="1165" height="815" extended-state="0" />
+    <frame x="675" y="23" width="1165" height="815" extended-state="0" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4052533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4051144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -337,7 +334,7 @@
         <state relative-caret-position="1440">
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -358,7 +355,7 @@
         <state relative-caret-position="465">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="65" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -508,22 +505,12 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/folium/folium.py" />
-    <entry file="file://$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week4Pandas/Matplotlib2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="65" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -545,6 +532,34 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week5Matplotlib/Matplotlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week7ML/daily_weather.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week7ML/Scikit_learn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
