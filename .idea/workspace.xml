@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="788">
-                <caret line="1018" column="34" lean-forward="false" selection-start-line="1018" selection-start-column="34" selection-end-line="1018" selection-end-column="34" />
+              <first_editor relative-caret-position="326">
+                <caret line="922" column="5" lean-forward="false" selection-start-line="922" selection-start-column="5" selection-end-line="922" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -80,8 +80,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="224" />
-    <option name="y" value="40" />
+    <option name="x" value="-1379" />
+    <option name="y" value="-238" />
     <option name="width" value="1165" />
     <option name="height" value="938" />
   </component>
@@ -302,7 +302,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <frame x="-1608" y="-444" width="1616" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -661,8 +661,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="788">
-            <caret line="1018" column="34" lean-forward="false" selection-start-line="1018" selection-start-column="34" selection-end-line="1018" selection-end-column="34" />
+          <first_editor relative-caret-position="326">
+            <caret line="922" column="5" lean-forward="false" selection-start-line="922" selection-start-column="5" selection-end-line="922" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor />

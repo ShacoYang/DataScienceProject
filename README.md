@@ -920,13 +920,13 @@ allowing for data driven decisions to be made
 * Credit card fraud detection
 * Handwritten digit recognition
 
-####Categories 
+#### Categories 
 * classification: predict category
 * regression: predict numeric value
 * cluster analysis: organize similar items into groups
 * association: find rules to capture associations between items
 
-####Supervised VS Unsupervised
+#### Supervised VS Unsupervised
 * Supervised
     * Target(what model is predicting) is provided
     * Labeled data
@@ -939,7 +939,7 @@ allowing for data driven decisions to be made
     * Sample, record, example, row, instance, observation
     * Variable, attribute, field, feature, column, dimension
 
-####scikit-learn
+#### scikit-learn
 * Open source lib for ML in Python
 * build on top of Numpy, SciPy, matplotlib
 * Active community for development
