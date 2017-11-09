@@ -908,3 +908,64 @@ print(stage.head())
     plt.grid(True)
     plt.show()
     ```
+
+# Machine Learning  
+used to build models to discover hidden patterns ad trends in the data,
+allowing for data driven decisions to be made
+* learning form data
+* on its own
+* used to discovering hidden patterns
+* data-driven decisions
+
+* Credit card fraud detection
+* Handwritten digit recognition
+
+####Categories 
+* classification: predict category
+* regression: predict numeric value
+* cluster analysis: organize similar items into groups
+* association: find rules to capture associations between items
+
+####Supervised VS Unsupervised
+* Supervised
+    * Target(what model is predicting) is provided
+    * Labeled data
+    * Classification & regression
+* Unsupervised
+    * Target is unknow or UNAVAILABLE
+    * Unlabeled data
+    * Cluster analysis & association analysis
+* Terms:
+    * Sample, record, example, row, instance, observation
+    * Variable, attribute, field, feature, column, dimension
+
+####scikit-learn
+* Open source lib for ML in Python
+* build on top of Numpy, SciPy, matplotlib
+* Active community for development
+* Improved continuously by developers
+
+* Utility funcs for
+    * Transforming raw feature vectors to suitable format
+* API
+    * Scaling of features: remove mean and keep unit variance
+    * Normalization
+    * Binarization 
+    * One Hot encoding for categorical features
+    * Handling of missing values
+    * Generating higher order features
+    * Build custom transformations
+### Classification:
+* binary-classification
+* muti-class classification : what product will customer buy
+
+* kNN, Decision Tree, Naive Bayes
+* Decision Tree: split data into "pure" regions
+    * Root Node
+    * Internal Nodes
+    * Leaf Nodes: when reach, determines the classification decision
+* When to stop split:
+    * All samples have same class label
+    * Number of samples in node reaches min
+    * Change in impurity measure is smaller than threshold 
+    * Max tree depth is reached   
