@@ -1073,3 +1073,28 @@ Regression or Clustering
     conn = sqlite3.connect('xxxx.sqlite')
     pd.read_sql_query("SQL statement", conn)
     ```
+### Natural Language Processing
+* nltk package
+    ```python
+    import nltk
+    nltk.download("movie_reviews", download_dir ='xxx')
+    ```
+* Filter  
+fileids can also filter the available files based on their category, which is the name of the subfolders they are located in. 
+    ```python
+    #'neg''pos' are folders name
+    negative_fileids = movie_reviews.fileids('neg')
+    positive_fileids = movie_reviews.fileids('pos')
+    ```
+* .raw() method
+    ```python
+    movie_reviews.raw(fileids=positive_fileids[0])
+    ```
+* nltk corpora == corpus
+* Tokenization
+    * 1. split text into words: Tokenization
+        * Issue: hard to figure out all corner cases: e.g: **New York-based**
+            * punctuation
+            * contractions
+            * hyphenated words
+        
