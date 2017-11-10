@@ -1063,3 +1063,13 @@ Regression or Clustering
 ####Linear Regression
 * Find regressio nline that makes sum of residuals as small as possible
 
+### Working with DBs
+* sqlite3 is extremely useful for downselecting data before importing them in pandas
+    ```python
+    import sqlite3
+    ```
+    For example you might have 1 TB of data in a table stored in a database on a server machine. You are interested in working on a subset of the data based on some criterion, unfortunately it would be impossible to first load data into pandas and then filter them, therefore we should tell the database to perform the filtering and just load into pandas the downsized dataset.
+    ```python
+    conn = sqlite3.connect('xxxx.sqlite')
+    pd.read_sql_query("SQL statement", conn)
+    ```
