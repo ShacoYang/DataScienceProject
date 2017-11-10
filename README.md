@@ -936,8 +936,8 @@ allowing for data driven decisions to be made
     * Unlabeled data
     * Cluster analysis & association analysis
 * Terms:
-    * Sample, record, example, row, instance, observation
-    * Variable, attribute, field, feature, column, dimension
+    * **Sample, record, example, row, instance, observation**
+    * **Variable, attribute, field, feature, column, dimension**
 
 #### scikit-learn
 * Open source lib for ML in Python
@@ -1032,3 +1032,34 @@ using test x to predict y (prediction)
 in y_test the actual labels (actual)
 '''
 ```
+### Clustering
+* Divides data into clusters
+* Similar items are placed in same cluster
+* Unsupervised, no 'correct' clustering, don't come with labels
+####K-Means
+* select k initial centroids
+    * **k** select K initial centroids
+    * **Repeat**
+        * assign each sample in a data set to closest centroid  
+        * Calculate mean of cluster to determine new centroid
+    * Stopping criteria is reached
+        * No changes to centroids
+        * Number of samples changing clusters < threshold
+
+* Issue: Final clusters are sensitive to init centroids
+* Solution: Run K-means multiple times with diff init centroids
+
+### Regression Analysis
+Regression or Clustering
+* when the model has to predict a **numeric value** instead of category
+* Input Variables -> Model -> output (number)
+
+* Training Data: Adjust model parameters
+* Validation Data: 
+    * Determine when to stop training (avoid overfitting)
+    * Estimate generalization performance
+* Test Data: Evaluate performance on new data
+
+####Linear Regression
+* Find regressio nline that makes sum of residuals as small as possible
+
